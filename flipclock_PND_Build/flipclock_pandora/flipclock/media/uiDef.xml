@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flipClockUI>
+	
+	<!-- Button defintions for UI elements 
+	This section defines buttons for UI elements. Some buttons are internally generated 
+	and not listed here due to efficiency. On the slider UI, the "out of focus" button
+	is not defined here as it is tied to the dimensions/size of the sliderbase image.
+	
+	-->
+	<!--<buttons>
+		 Define buttons for Slider UI element overlay -->
+
+		<!-- No external buttons yet (all internal) -->
+		
+		<!-- Done buttons for Slider UI element overlay -->
+		
+	<!-- </buttons>
+	 Done button definitions for UI elements -->
+	
+	
+	<!-- Label definitions for UI elements -->
+	<labels>
+		<!-- Define labels for Slider UI element overlay -->
+
+		<!-- Title of slider -->
+		<labelDef>
+			<clockMode>slider</clockMode>
+			<type>text</type>
+			<left>170</left>
+			<top>20</top>
+			<width>460</width>
+			<height>50</height>
+			<textSize>large</textSize>
+			<textAlign>center</textAlign>
+			<textColor>#FFFFFF</textColor>
+			<labelValue>%modalKey</labelValue>
+		</labelDef>
+				
+		<!-- Slider current value -->
+		<labelDef>
+			<clockMode>slider</clockMode>
+			<type>text</type>
+			<left>350</left>
+			<top>130</top>
+			<width>100</width>
+			<height>34</height>
+			<textSize>medium</textSize>
+			<textColor>#FFFFFF</textColor>
+			<textAlign>center</textAlign>
+			<labelKey>%modalValue</labelKey>
+		</labelDef>
+		
+		<!-- Slider min value -->
+		<labelDef>
+			<clockMode>slider</clockMode>
+			<type>text</type>
+			<left>160</left>
+			<top>130</top>
+			<width>100</width>
+			<height>34</height>
+			<textSize>medium</textSize>
+			<textColor>#FFFFFF</textColor>
+			<labelValue>%modalMinVal</labelValue>
+		</labelDef>
+		
+		<!-- Slider max value -->
+		<labelDef>
+			<clockMode>slider</clockMode>
+			<type>text</type>
+			<left>650</left>
+			<top>130</top>
+			<width>100</width>
+			<height>34</height>
+			<textSize>medium</textSize>
+			<textColor>#FFFFFF</textColor>
+			<textAlign>right</textAlign>
+			<labelValue>%modalMaxVal</labelValue>
+		</labelDef>
+		
+		<!-- Slider pointer itself -->
+		<labelDef>
+			<clockMode>slider</clockMode>
+			<type>image</type>
+			<left>650</left>
+			<top>130</top>
+			<width>100</width>
+			<height>34</height>
+			<imageFile>sliderPointer.png</imageFile>
+			<labelKey>sliderPointer</labelKey>
+		</labelDef>
+		
+		<!-- Done labels for Slider UI element overlay -->
+		
+	</labels>
+	<!-- Done label definitions for UI Elements -->
+	
+</flipClockUI>

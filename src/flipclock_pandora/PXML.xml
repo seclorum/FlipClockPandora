@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PXML xmlns="http://openpandora.org/namespaces/PXML">
+<application id="FlipClock" appdata="FlipClock">
+<title lang="en_US">FlipClock on your Pandora</title>
+<title lang="de">FlipClock aufs Pandora</title>
+<description lang="en_US">A handy alarm clock packaged for Pandora.</description>
+<version major="1" minor="0" release="0" build="2"/>
+<exec command="./oricutron_PandoraOS" arguments="-fullscreen" background="true" standalone="true"/>
+<author name="Rob Williams, Spencer Lai"/>
+<icon src="flipclock.png"/>
+<categories>
+<category name="Office"/>
+</categories>
+</application>
+</PXML>

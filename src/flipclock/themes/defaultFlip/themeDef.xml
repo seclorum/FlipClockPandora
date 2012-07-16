@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flipClockTheme>
+	<summary>
+		<name>Default Flip</name>
+		<author>Rob Williams</author>
+		<version>1.0</version>
+		<description>The default "flipclock" theme, as designed by Ciro</description>
+	</summary>
+	
+	<!-- Settings for main clock/overall -->
+	<settings>
+		<usesAlphaBG>0</usesAlphaBG>
+		<transitionMode>slide</transitionMode>
+		<ampmSign>
+			<top>30</top>
+			<left>10</left>
+		</ampmSign>
+		<firstHour>
+			<top>70</top>
+			<left>3</left>
+		</firstHour>
+		<secondHour>
+			<top>70</top>
+			<left>192</left>
+		</secondHour>
+		<firstMinute>
+			<top>70</top>
+			<left>416</left>
+		</firstMinute>
+		<secondMinute>
+			<top>70</top>
+			<left>605</left>
+		</secondMinute>
+		<secondsBar>
+			<top>363</top>
+			<left>0</left>
+			<increment>1</increment>
+		</secondsBar>
+	</settings>
+	<!-- Done main clock settings -->
+	
+	<!-- Settings for alarm screen -->
+	<alarmScreenSettings>
+		<alarmDigitTransitionMode>slide</alarmDigitTransitionMode>
+		<firstHour>
+			<top>106</top>
+			<left>25</left>
+		</firstHour>
+		<secondHour>
+			<top>106</top>
+			<left>132</left>
+		</secondHour>
+		<firstMinute>
+			<top>106</top>
+			<left>250</left>
+		</firstMinute>
+		<secondMinute>
+			<top>106</top>
+			<left>357</left>
+		</secondMinute>
+		<alarmDays>
+			<left>40</left>
+			<top>395</top>
+			<width>725</width>
+			<height>85</height>
+			<textColor>#000000</textColor>
+			<textTop>57</textTop>
+			<textLeft>18</textLeft>
+		</alarmDays>
+		<!-- Define the rect where alert settings will be; this is needed to clear the backgrounds behind the buttons
+		when you change the alert mode -->
+		<alertSettingsRect>
+			<left>480</left>
+			<top>250</top>
+			<width>300</width>
+			<height>150</height>
+		</alertSettingsRect>
+	</alarmScreenSettings>
+	<!-- Done settings for alarm screen -->
+	
+	<!-- Settings for timer screen -->
+	<timerScreenSettings>
+		<firstHour>
+			<top>63</top>
+			<left>50</left>
+		</firstHour>
+		<secondHour>
+			<top>63</top>
+			<left>151</left>
+		</secondHour>
+		<firstMinute>
+			<top>63</top>
+			<left>296</left>
+		</firstMinute>
+		<secondMinute>
+			<top>63</top>
+			<left>397</left>
+		</secondMinute>
+		<firstSecond>
+			<top>63</top>
+			<left>550</left>
+		</firstSecond>
+		<secondSecond>
+			<top>63</top>
+			<left>651</left>
+		</secondSecond>
+	</timerScreenSettings>
+	
+	<!-- Done settings for timer screen -->
+	
+	
+	<!-- Button defintions for this theme -->
+	<buttons>
+		<!-- Define normal clock mode buttons -->
+		<buttonDef>
+			<clockMode>normal</clockMode>
+			<type>click</type>
+			<left>700</left>
+			<top>390</top>
+			<width>100</width>
+			<height>80</height>
+			<buttonKey>quit</buttonKey>
+		</buttonDef>
+		<buttonDef>
+			<clockMode>normal</clockMode>
+			<type>click</type>
+			<left>552</left>
+			<top>381</top>
+			<width>110</width>
+			<height>90</height>
+			<buttonKey>nextTheme</buttonKey>
+		</buttonDef>
+		<buttonDef>
+			<clockMode>normal</clockMode>
+			<type>mouseDrag</type>
+			<left>0</left>
+			<top>10</top>
+			<width>800</width>
+			<height>380</height>
+			<dragUpOffset>40</dragUpOffset>
+			<dragUpKey>gotoSettings</dragUpKey>
+			<dragDownOffset>40</dragDownOffset>
+			<dragDownKey>gotoClockSettings</dragDownKey>
+			<dragRightOffset>80</dragRightOffset>
+			<dragRightKey>nextTheme</dragRightKey>
+			<dragLeftOffset>80</dragLeftOffset>
+			<dragLeftKey>gotoTimer</dragLeftKey>
+		</buttonDef>
+		
+				<!-- Labels for navigation -->
+		<buttonDef>
+			<clockMode>normal</clockMode>
+			<type>click</type>
+			<left>281</left>
+			<top>385</top>
+			<width>256</width>
+			<height>90</height>
+			<buttonKey>gotoClockSettings</buttonKey>
+		</buttonDef>
+		
+		<buttonDef>
+			<clockMode>normal</clockMode>
+			<type>click</type>
+			<left>7</left>
+			<top>385</top>
+			<width>256</width>
+			<height>90</height>
+			<buttonKey>gotoSettings</buttonKey>
+		</buttonDef>
+		
+		<!-- Done labels for navigation -->
+		
+		<!-- Done normal clock mode buttons -->
+		
+		
+		
+		<!-- Define buttons for when alarm is running -->
+		
+		<!-- Button to stop the current alarm -->
+		<buttonDef>
+			<clockMode>alarmActive</clockMode>
+			<type>click</type>
+			<left>0</left>
+			<top>240</top>
+			<width>403</width>
+			<height>233</height>
+			<buttonKey>stopAlarm</buttonKey>
+		</buttonDef>
+		
+		<!-- Label for snooze button text when alarm is running-->
+		<buttonDef>
+			<clockMode>alarmActive</clockMode>
+			<type>click</type>
+			<left>396</left>
+			<top>240</top>
+			<width>403</width>
+			<height>233</height>
+			<buttonKey>doSnooze</buttonKey>
+		</buttonDef>
+		
+		<!-- Done alarm running buttons -->
+		
+		
+		<!-- Define buttons for Timer mode -->
+		<!-- Main control button -->
+		<buttonDef>
+			<clockMode>timer</clockMode>
+			<type>mouseDrag</type>
+			<left>0</left>
+			<top>10</top>
+			<width>800</width>
+			<height>380</height>
+			<dragRightOffset>80</dragRightOffset>
+			<dragRightKey>gotoNormal</dragRightKey>
+		</buttonDef>
+		
+		<!-- Start the timer! -->
+		<buttonDef>
+			<clockMode>timer</clockMode>
+			<type>click</type>
+			<left>15</left>
+			<top>385</top>
+			<width>255</width>
+			<height>90</height>
+			<buttonKey>startTimer</buttonKey>
+		</buttonDef>
+		
+		<!-- Stop the timer! -->
+		<buttonDef>
+			<clockMode>timer</clockMode>
+			<type>click</type>
+			<left>530</left>
+			<top>385</top>
+			<width>255</width>
+			<height>90</height>
+			<buttonKey>stopTimer</buttonKey>
+		</buttonDef>
+		
+		<!-- Pause the timer! -->
+		<buttonDef>
+			<clockMode>timer</clockMode>
+			<type>click</type>
+			<left>300</left>
+			<top>385</top>
+			<width>200</width>
+			<height>90</height>
+			<buttonKey>pauseTimer</buttonKey>
+		</buttonDef>
+		<!-- Done timer mode buttons -->
+		
+		
+		<!-- Define Alarm Settings mode buttons -->
+		
+		<!-- Button go to back to clock mode -->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>mouseDrag</type>
+			<left>0</left>
+			<top>0</top>
+			<width>800</width>
+			<height>85</height>
+			<dragDownOffset>30</dragDownOffset>
+			<dragDownKey>gotoNormal</dragDownKey>
+		</buttonDef>
+		
+		<!-- Button go to forward to clock settings mode -->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>mouseDrag</type>
+			<left>0</left>
+			<top>380</top>
+			<width>800</width>
+			<height>100</height>
+			<dragUpOffset>30</dragUpOffset>
+			<dragUpKey>gotoClockSettings</dragUpKey>
+		</buttonDef>
+		
+		<!-- Button to turn an alarm on or off -->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>switch</type>
+			<left>650</left>
+			<top>80</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setAlarmOnOff</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to set alarm AM/PM -->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>switch</type>
+			<left>650</left>
+			<top>140</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setAlarmAMPM</buttonKey>
+		</buttonDef>
+		
+		<!-- Button for alarm mode (sound, etc)-->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>switch</type>
+			<left>650</left>
+			<top>200</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setAlarmMode</buttonKey>
+		</buttonDef>
+		
+		<!-- Button for snooze time-->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>click</type>
+			<left>360</left>
+			<top>340</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setAlarmSnoozeTime</buttonKey>
+		</buttonDef>
+		
+			<!-- Button for alarm sound file-->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>click</type>
+			<left>490</left>
+			<top>300</top>
+			<width>163</width>
+			<height>95</height>
+			<buttonKey>setAlarmSound</buttonKey>
+		</buttonDef>
+		
+		<!-- Button for loop sound -->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>switch</type>
+			<left>670</left>
+			<top>300</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setAlarmOnceLoop</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to open FM tuner -->
+		<buttonDef>
+			<clockMode>settings</clockMode>
+			<type>click</type>
+			<left>550</left>
+			<top>260</top>
+			<width>180</width>
+			<height>140</height>
+			<buttonKey>openFMPicker</buttonKey>
+		</buttonDef>
+		
+		<!-- Done settings mode buttons -->
+		
+		<!-- Define Clock Settings mode buttons -->
+		
+		<!-- Button to choose the theme color -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>click</type>
+			<left>630</left>
+			<top>157</top>
+			<width>145</width>
+			<height>110</height>
+			<buttonKey>pickMood</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to set clock 12/24 hour mode -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>switch</type>
+			<left>200</left>
+			<top>46</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setMilitaryTime</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to turn seconds bar on/off -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>switch</type>
+			<left>500</left>
+			<top>46</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setSecondsVisible</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to set alarm control style (daily, weekly) -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>switch</type>
+			<left>200</left>
+			<top>130</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setAlarmStyle</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to set alarm max vol level -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>click</type>
+			<left>500</left>
+			<top>120</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setAlarmMaxVol</buttonKey>
+		</buttonDef>
+		
+
+		<!-- Button to turn insonmiac mode on/off -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>switch</type>
+			<left>200</left>
+			<top>220</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setInsomniacMode</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to turn insonmiac lock on/off -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>switch</type>
+			<left>200</left>
+			<top>305</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setInsomniacLock</buttonKey>
+		</buttonDef>
+		
+		<!-- Button to set insomniac brightness level -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>click</type>
+			<left>500</left>
+			<top>305</top>
+			<width>104</width>
+			<height>48</height>
+			<buttonKey>setInsomniacLevel</buttonKey>
+		</buttonDef>
+		
+
+		
+		<!-- Button go to back to clock mode -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>mouseDrag</type>
+			<left>0</left>
+			<top>380</top>
+			<width>800</width>
+			<height>100</height>
+			<dragUpOffset>30</dragUpOffset>
+			<dragUpKey>gotoNormal</dragUpKey>
+		</buttonDef>
+		
+		<!-- Button go to back to clock mode -->
+		<buttonDef>
+			<clockMode>clockSettings</clockMode>
+			<type>mouseDrag</type>
+			<left>0</left>
+			<top>0</top>
+			<width>800</width>
+			<height>100</height>
+			<dragDownOffset>30</dragDownOffset>
+			<dragDownKey>gotoSettings</dragDownKey>
+		</buttonDef>
+		<!-- Done clock settings mode buttons -->
+		 
+
+		 
+		
+		<!-- Buttons for mood picker window/screen -->
+		<!-- button to close the mood picker if user clicks outside of it -->
+		<buttonDef>
+			<clockMode>moodPicker</clockMode>
+			<type>outsideClick</type>
+			<left>60</left>
+			<top>45</top>
+			<width>680</width>
+			<height>385</height>
+			<buttonKey>closeMoodPicker</buttonKey>
+		</buttonDef>
+		
+		<buttonDef>
+			<clockMode>moodPicker</clockMode>
+			<type>slider</type>
+			<left>82</left>
+			<top>60</top>
+			<width>476</width>
+			<height>315</height>
+			<buttonKey>selectMoodColor</buttonKey>
+		</buttonDef>
+		
+		<buttonDef>
+			<clockMode>moodPicker</clockMode>
+			<type>click</type>
+			<left>640</left>
+			<top>347</top>
+			<width>93</width>
+			<height>54</height>
+			<buttonKey>closeMoodPicker</buttonKey>
+		</buttonDef>
+		
+		<!-- Done Buttons for mood picker window/screen -->
+		
+		<!-- Buttons for FM Radio picker window/screen -->
+		<!-- button to close the mood picker if user clicks outside of it -->
+		<buttonDef>
+			<clockMode>FMRadioPicker</clockMode>
+			<type>outsideClick</type>
+			<left>0</left>
+			<top>120</top>
+			<width>800</width>
+			<height>240</height>
+			<buttonKey>closeFMPicker</buttonKey>
+		</buttonDef>
+		
+		<!-- button to close the radio picker if user clicks "OK" area -->
+		<buttonDef>
+			<clockMode>FMRadioPicker</clockMode>
+			<type>click</type>
+			<left>674</left>
+			<top>300</top>
+			<width>100</width>
+			<height>40</height>
+			<buttonKey>closeFMPicker</buttonKey>
+		</buttonDef>
+		
+		<!-- button for the station selector indicator -->
+		<buttonDef>
+			<clockMode>FMRadioPicker</clockMode>
+			<type>slider</type>
+			<left>145</left>
+			<top>240</top>
+			<width>420</width>
+			<height>75</height>
+			<buttonKey>slideFMPicker</buttonKey>
+		</buttonDef>
+		
+		<!-- Button for manual tune down -->
+		<buttonDef>
+			<clockMode>FMRadioPicker</clockMode>
+			<type>click</type>
+			<left>643</left>
+			<top>240</top>
+			<width>63</width>
+			<height>45</height>
+			<buttonKey>tuneFMRadioDown</buttonKey>
+		</buttonDef>
+		
+		<!-- Button for manual tune up -->
+		<buttonDef>
+			<clockMode>FMRadioPicker</clockMode>
+			<type>click</type>
+			<left>712</left>
+			<top>240</top>
+			<width>63</width>
+			<height>45</height>
+			<buttonKey>tuneFMRadioUp</buttonKey>
+		</buttonDef>
+		
+		
+		
+		
+	</buttons>
+	<!-- Done button definitions for this theme -->
+	
+	
+	<!-- Label definitions for this theme -->
+	<labels>
+		<!-- Define normal clock mode labels -->
+		
+		
+		<!-- Done labels for navigation -->
+		
+		<!-- Date (Month - Year) -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>text</type>
+			<left>300</left>
+			<top>394</top>
+			<width>225</width>
+			<height>26</height>
+			<textSize>small</textSize>
+			<textColor>#000000</textColor>
+			<textAlign>center</textAlign>
+			<labelValue>%b - %Y</labelValue>
+			<labelKey>date</labelKey>
+		</labelDef>
+		<!-- Date (Day - Date ) -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>text</type>
+			<left>300</left>
+			<top>420</top>
+			<width>225</width>
+			<height>45</height>
+			<textSize>large</textSize>
+			<textColor>#000000</textColor>
+			<textAlign>center</textAlign>
+			<labelValue>%a %d</labelValue>
+			<labelKey>date</labelKey>
+		</labelDef>
+		
+		<!-- Next Alarm BG -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>image</type>
+			<left>7</left>
+			<top>385</top>
+			<width>252</width>
+			<height>85</height>
+			<imageFile>alarmEngagedHolder.png</imageFile>
+			<labelKey>nextAlarmEnabled</labelKey>
+		</labelDef>
+		
+		<!-- Next Alarm date -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>text</type>
+			<left>114</left>
+			<top>391</top>
+			<width>50</width>
+			<height>26</height>
+			<textSize>small</textSize>
+			<textColor>#000000</textColor>
+			<labelValue>%a</labelValue>
+			<labelKey>nextAlarmDate</labelKey>
+		</labelDef>
+		
+		<!-- Next Alarm Time -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>text</type>
+			<left>87</left>
+			<top>420</top>
+			<width>112</width>
+			<height>45</height>
+			<textSize>large</textSize>
+			<textColor>#000000</textColor>
+			<labelValue>%l:%M</labelValue>
+			<labelKey>nextAlarmDate</labelKey>
+		</labelDef>
+		
+		<!-- SNOOZE! (overrides next alarm date) -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>text</type>
+			<left>15</left>
+			<top>394</top>
+			<width>184</width>
+			<height>70</height>
+			<textSize>large</textSize>
+			<textColor>#000000</textColor>
+			<textBGColor>#B2B2B2</textBGColor>
+			<labelValue>SNOOZING</labelValue>
+			<labelKey>snoozeActive</labelKey>
+		</labelDef>
+		
+		<!-- Next Alarm Countdown -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>text</type>
+			<left>230</left>
+			<top>402</top>
+			<width>27</width>
+			<height>78</height>
+			<textAngle>90</textAngle>
+			<textSize>small</textSize>
+			<textColor>#000000</textColor>
+			<labelValue>%H:%M</labelValue>
+			<labelKey>nextAlarmCountDown</labelKey>
+		</labelDef>
+	
+		<!-- Label to switch to next theme -->
+		<labelDef>
+			<clockMode>normal</clockMode>
+			<type>image</type>
+			<left>553</left>
+			<top>382</top>
+			<width>110</width>
+			<height>90</height>
+			<imageFile>nextTheme.png</imageFile>
+			<buttonKey>nextTheme</buttonKey>
+		</labelDef>
+	
+	
+		<!-- Done normal clock mode labels -->
+		
+		<!-- Define clock setting mode labels -->
+		<!-- label for maximum alarm volume -->
+		<labelDef>
+			<clockMode>clockSettings</clockMode>
+			<type>text</type>
+			<left>500</left>
+			<top>140</top>
+			<width>104</width>
+			<height>40</height>
+			<textSize>medium</textSize>
+			<textColor>#CCCC00</textColor>
+			<textAlign>center</textAlign>
+			<labelKey>maxAlarmVol</labelKey>
+		</labelDef>
+		
+		<!-- label for insomniac brightness level -->
+		<labelDef>
+			<clockMode>clockSettings</clockMode>
+			<type>text</type>
+			<left>500</left>
+			<top>320</top>
+			<width>104</width>
+			<height>40</height>
+			<textSize>medium</textSize>
+			<textColor>#CCCC00</textColor>
+			<textAlign>center</textAlign>
+			<labelKey>insomniacDim</labelKey>
+		</labelDef>
+		
+		<!-- Done clock setting mode labels -->
+		
+		<!-- Define alarm setting mode labels -->
+		
+		<!-- label for snooze time -->
+		<labelDef>
+			<clockMode>settings</clockMode>
+			<type>text</type>
+			<left>360</left>
+			<top>347</top>
+			<width>104</width>
+			<height>40</height>
+			<textSize>medium</textSize>
+			<textColor>#CCCC00</textColor>
+			<textAlign>center</textAlign>
+			<labelKey>alarmSnoozeTime</labelKey>
+		</labelDef>
+
+		
+		
+		<!-- Label for alarm AM/PM button -->
+		<labelDef>
+			<clockMode>settings</clockMode>
+			<type>text</type>
+			<left>520</left>
+			<top>138</top>
+			<width>130</width>
+			<height>48</height>
+			<textSize>large</textSize>
+			<textColor>#242424</textColor>
+			<labelValue>AM/PM</labelValue>
+			<labelKey>nonMilitaryTime</labelKey>
+		</labelDef>
+		
+		
+		
+		<!-- Label for alarm sound chooser button -->
+		<labelDef>
+			<clockMode>settings</clockMode>
+			<type>image</type>
+			<left>490</left>
+			<top>300</top>
+			<width>163</width>
+			<height>95</height>
+			<imageFile>soundPicker.png</imageFile>
+			<labelKey>currentAlertModeSound</labelKey>
+		</labelDef>
+		
+		<!-- Label for the choosen sound file -->
+		<labelDef>
+			<clockMode>settings</clockMode>
+			<type>text</type>
+			<left>505</left>
+			<top>360</top>
+			<width>130</width>
+			<height>24</height>
+			<textSize>small</textSize>
+			<textColor>#000000</textColor>
+			<labelKey>selectedAlarmSound</labelKey>
+		</labelDef>
+		
+		<!-- Label for FM chooser button -->
+		<labelDef>
+			<clockMode>settings</clockMode>
+			<type>image</type>
+			<left>550</left>
+			<top>260</top>
+			<width>180</width>
+			<height>140</height>
+			<imageFile>fmRadioTune.png</imageFile>
+			<labelKey>currentAlertModeFMRadio</labelKey>
+		</labelDef>
+		
+		<!-- Label for alarm day of teh week (below digits) -->
+		<labelDef>
+			<clockMode>settings</clockMode>
+			<type>text</type>
+			<left>45</left>
+			<top>342</top>
+			<width>70</width>
+			<height>36</height>
+			<textSize>medium</textSize>
+			<textColor>#000000</textColor>
+			<labelValue>%a</labelValue>
+			<labelKey>selectedAlarmDate</labelKey>
+		</labelDef>
+		
+		<!-- Background image label for "stop" button when alarm is running -->
+		<labelDef>
+			<clockMode>alarmActive</clockMode>
+			<type>image</type>
+			<left>0</left>
+			<top>240</top>
+			<width>403</width>
+			<height>233</height>
+			<imageFile>alarmActiveButton.png</imageFile>
+
+		</labelDef>
+		
+		<!-- Background image label for "snooze" button when alarm is running -->
+		<labelDef>
+			<clockMode>alarmActive</clockMode>
+			<type>image</type>
+			<left>396</left>
+			<top>240</top>
+			<width>403</width>
+			<height>233</height>
+			<imageFile>alarmActiveButton.png</imageFile>
+			<labelKey>alarmSnoozeEnabled</labelKey>
+		</labelDef>
+		
+		<!-- Label for snooze button text when alarm is running-->
+		<labelDef>
+			<clockMode>alarmActive</clockMode>
+			<type>text</type>
+			<left>400</left>
+			<top>330</top>
+			<width>390</width>
+			<height>80</height>
+			<textSize>huge</textSize>
+			<textColor>#000000</textColor>
+			<textAlign>center</textAlign>
+			<labelValue>SNOOZE  %i m!</labelValue>
+			<labelKey>alarmSnooze</labelKey>
+		</labelDef>
+		
+		<!-- Label to stop alarm when running-->
+		<labelDef>
+			<clockMode>alarmActive</clockMode>
+			<type>text</type>
+			<left>10</left>
+			<top>330</top>
+			<width>390</width>
+			<height>80</height>
+			<textSize>huge</textSize>
+			<textColor>#000000</textColor>
+			<textAlign>center</textAlign>
+			<labelValue>ALARM OFF!</labelValue>
+		</labelDef>
+		
+		<!-- Done label definitions for alarm running -->
+		
+		<!-- Define labels for FM Picker -->
+		<!-- Label for FM selector indicator button -->
+		<labelDef>
+			<clockMode>FMRadioPicker</clockMode>
+			<type>image</type>
+			<left>145</left>
+			<top>250</top>
+			<width>415</width>
+			<height>75</height>
+			<imageFile>fmRadioSelector.png</imageFile>
+			<labelKey>FMSelector</labelKey>
+		</labelDef>
+		
+		<!-- Label for FM frequency -->
+		<labelDef>
+			<clockMode>FMRadioPicker</clockMode>
+			<type>text</type>
+			<left>650</left>
+			<top>184</top>
+			<width>120</width>
+			<height>50</height>
+			<textSize>large</textSize>
+			<textColor>#000000</textColor>
+			<textBGColor>#D6DCDA</textBGColor>
+			<labelKey>FMCurrentFrequency</labelKey>
+		</labelDef>
+		
+		
+		
+	</labels>
+	<!-- Done label definitions for this theme -->
+	
+</flipClockTheme>

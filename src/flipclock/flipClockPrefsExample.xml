@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- example flipclockC preferences file... only used for reference, the real one should be
+generated and stored in /home/user/.flipClockPrefs.conf -->
+<flipClockPreferences>
+	<mainOptions>
+		<currentThemePath></currentThemePath>
+		<militaryTime></militaryTime>
+		<showSeconds></showSeconds>
+		<moodIndex></moodIndex>
+	</mainOptions>
+
+</flipClockPreferences>

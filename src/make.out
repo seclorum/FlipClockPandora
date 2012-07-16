@@ -1,0 +1,179 @@
+fc4.c:38:64: error: glib.h: No such file or directory
+fc4.c:61:52: error: gtk/gtk.h: No such file or directory
+fc4.c:194: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'insomniacTO'
+fc4.c:258: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+In file included from fc4.c:358:
+fileDirFunc.c: In function 'file_select':
+fileDirFunc.c:88: error: 'FALSE' undeclared (first use in this function)
+fileDirFunc.c:88: error: (Each undeclared identifier is reported only once
+fileDirFunc.c:88: error: for each function it appears in.)
+fileDirFunc.c:90: error: 'TRUE' undeclared (first use in this function)
+fileDirFunc.c:92: warning: control reaches end of non-void function
+fileDirFunc.c: In function 'mp3_select':
+fileDirFunc.c:116: error: 'TRUE' undeclared (first use in this function)
+fileDirFunc.c:119: error: 'FALSE' undeclared (first use in this function)
+fileDirFunc.c:123: warning: control reaches end of non-void function
+In file included from fc4.c:364:
+audioFunc.c:24:21: error: gst/gst.h: No such file or directory
+In file included from fc4.c:364:
+audioFunc.c: At top level:
+audioFunc.c:32: error: expected specifier-qualifier-list before 'GstElement'
+audioFunc.c:69: error: expected ')' before '*' token
+audioFunc.c:73: error: expected ')' before '*' token
+audioFunc.c:79: error: expected ')' before '*' token
+audioFunc.c:81: error: expected declaration specifiers or '...' before 'GstElement'
+audioFunc.c:83: error: expected ')' before '*' token
+audioFunc.c:85: error: expected ')' before '*' token
+audioFunc.c:99: error: expected ')' before '*' token
+audioFunc.c:121: error: expected ')' before '*' token
+audioFunc.c: In function 'gstFindBestSink':
+audioFunc.c:221: error: 'GstRegistry' undeclared (first use in this function)
+audioFunc.c:221: error: 'thisReg' undeclared (first use in this function)
+audioFunc.c:222: error: 'GList' undeclared (first use in this function)
+audioFunc.c:222: error: 'pluginList' undeclared (first use in this function)
+audioFunc.c:222: error: 'current' undeclared (first use in this function)
+audioFunc.c:222: warning: left-hand operand of comma expression has no effect
+audioFunc.c:225: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+audioFunc.c:225: error: 'plugName' undeclared (first use in this function)
+audioFunc.c:235: warning: implicit declaration of function 'gst_registry_get_default'
+audioFunc.c:236: warning: implicit declaration of function 'gst_registry_get_plugin_list'
+audioFunc.c:239: warning: implicit declaration of function 'g_list_first'
+audioFunc.c:248: warning: implicit declaration of function 'gst_plugin_get_name'
+audioFunc.c:280: warning: implicit declaration of function 'g_list_next'
+audioFunc.c:284: warning: implicit declaration of function 'gst_plugin_list_free'
+audioFunc.c: At top level:
+audioFunc.c:327: error: expected ')' before '*' token
+audioFunc.c: In function 'createPlayer':
+audioFunc.c:346: error: 'GError' undeclared (first use in this function)
+audioFunc.c:346: error: 'error' undeclared (first use in this function)
+audioFunc.c:347: error: 'GstBus' undeclared (first use in this function)
+audioFunc.c:347: error: 'bus' undeclared (first use in this function)
+audioFunc.c:351: warning: implicit declaration of function 'g_new0'
+audioFunc.c:351: error: expected expression before 'alarmSoundObj'
+audioFunc.c:351: warning: assignment makes pointer from integer without a cast
+audioFunc.c:352: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:353: error: 'alarmSoundObj' has no member named 'looping'
+audioFunc.c:365: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:365: warning: implicit declaration of function 'gst_parse_launch'
+audioFunc.c:380: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:386: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:390: warning: implicit declaration of function 'gst_pipeline_get_bus'
+audioFunc.c:390: warning: implicit declaration of function 'GST_PIPELINE'
+audioFunc.c:390: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:391: warning: implicit declaration of function 'gst_bus_add_signal_watch_full'
+audioFunc.c:391: error: 'G_PRIORITY_HIGH' undeclared (first use in this function)
+audioFunc.c:392: warning: implicit declaration of function 'g_signal_connect'
+audioFunc.c:392: error: 'GCallback' undeclared (first use in this function)
+audioFunc.c:392: error: 'cb_message_error' undeclared (first use in this function)
+audioFunc.c:393: error: expected ')' before 'eos_message_received'
+audioFunc.c:395: warning: implicit declaration of function 'gst_object_unref'
+audioFunc.c:395: warning: implicit declaration of function 'GST_OBJECT'
+audioFunc.c: In function 'cleanupPlayer':
+audioFunc.c:419: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:420: warning: implicit declaration of function 'stopPipe'
+audioFunc.c:420: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:422: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:423: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c: At top level:
+audioFunc.c:442: error: expected declaration specifiers or '...' before 'GstElement'
+audioFunc.c: In function 'loadFile':
+audioFunc.c:444: error: 'GstElement' undeclared (first use in this function)
+audioFunc.c:444: error: 'audioSrc' undeclared (first use in this function)
+audioFunc.c:448: error: 'playerPipe' undeclared (first use in this function)
+audioFunc.c:448: error: 'GST_STATE_PLAYING' undeclared (first use in this function)
+audioFunc.c:454: warning: implicit declaration of function 'gst_bin_get_by_name'
+audioFunc.c:454: warning: implicit declaration of function 'GST_BIN'
+audioFunc.c:462: warning: implicit declaration of function 'g_object_set'
+audioFunc.c:462: warning: implicit declaration of function 'G_OBJECT'
+audioFunc.c: In function 'setLoopMode':
+audioFunc.c:481: error: 'alarmSoundObj' has no member named 'looping'
+audioFunc.c: At top level:
+audioFunc.c:494: error: expected ')' before '*' token
+audioFunc.c:515: error: expected ')' before '*' token
+audioFunc.c:528: error: expected ')' before '*' token
+audioFunc.c: In function 'playAlarm':
+audioFunc.c:552: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:553: warning: implicit declaration of function 'playPipe'
+audioFunc.c:553: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:555: error: 'alarmSoundObj' has no member named 'startTime'
+audioFunc.c:557: error: 'FALSE' undeclared (first use in this function)
+audioFunc.c:558: warning: control reaches end of non-void function
+audioFunc.c: At top level:
+audioFunc.c:566: error: expected ')' before '*' token
+audioFunc.c:603: error: expected ')' before '*' token
+audioFunc.c: In function 'fadeSoundIn':
+audioFunc.c:647: warning: implicit declaration of function 'setPipeVolume'
+audioFunc.c:647: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:653: error: 'alarmSoundObj' has no member named 'stepTime'
+audioFunc.c:654: error: 'alarmSoundObj' has no member named 'maxVol'
+audioFunc.c:656: warning: implicit declaration of function 'g_timeout_add'
+audioFunc.c:656: error: 'alarmSoundObj' has no member named 'stepTime'
+audioFunc.c:656: error: 'GSourceFunc' undeclared (first use in this function)
+audioFunc.c:656: error: expected ')' before 'stepVolumeUp'
+audioFunc.c: In function 'stepVolumeUp':
+audioFunc.c:674: warning: implicit declaration of function 'getPipeVolume'
+audioFunc.c:674: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:676: error: 'alarmSoundObj' has no member named 'maxVol'
+audioFunc.c:678: error: 'alarmSoundObj' has no member named 'pipeline'
+audioFunc.c:681: error: 'alarmSoundObj' has no member named 'stepTime'
+audioFunc.c:681: error: 'GSourceFunc' undeclared (first use in this function)
+audioFunc.c:681: error: expected ')' before 'stepVolumeUp'
+audioFunc.c:685: error: 'FALSE' undeclared (first use in this function)
+audioFunc.c:687: warning: control reaches end of non-void function
+In file included from fc4.c:388:
+alarmFunc.c: In function 'handleAlarm':
+alarmFunc.c:152: error: 'alarmSoundObj' has no member named 'pipeline'
+alarmFunc.c:154: error: 'alarmSoundObj' has no member named 'pipeline'
+alarmFunc.c:154: error: too many arguments to function 'loadFile'
+alarmFunc.c:240: error: 'alarmSoundObj' has no member named 'pipeline'
+alarmFunc.c:240: error: too many arguments to function 'loadFile'
+alarmFunc.c: In function 'snoozeAlarm':
+alarmFunc.c:417: error: 'GSourceFunc' undeclared (first use in this function)
+alarmFunc.c:417: error: expected ')' before 'handleAlarm'
+alarmFunc.c: In function 'borked_fselector':
+alarmFunc.c:2409: error: 'GtkWidget' undeclared (first use in this function)
+alarmFunc.c:2409: error: 'dialog' undeclared (first use in this function)
+alarmFunc.c:2410: warning: implicit declaration of function 'gtk_file_chooser_dialog_new'
+alarmFunc.c:2412: error: 'GTK_FILE_CHOOSER_ACTION_OPEN' undeclared (first use in this function)
+alarmFunc.c:2413: error: 'GTK_STOCK_CANCEL' undeclared (first use in this function)
+alarmFunc.c:2414: error: 'GTK_RESPONSE_CANCEL' undeclared (first use in this function)
+alarmFunc.c:2415: error: 'GTK_STOCK_OPEN' undeclared (first use in this function)
+alarmFunc.c:2416: error: 'GTK_RESPONSE_ACCEPT' undeclared (first use in this function)
+alarmFunc.c:2419: warning: implicit declaration of function 'gtk_dialog_run'
+alarmFunc.c:2419: warning: implicit declaration of function 'GTK_DIALOG'
+alarmFunc.c: In function 'pickAlarmSoundFile':
+alarmFunc.c:2475: error: 'GtkWidget' undeclared (first use in this function)
+alarmFunc.c:2475: error: 'dialog' undeclared (first use in this function)
+alarmFunc.c:2476: error: 'GtkFileFilter' undeclared (first use in this function)
+alarmFunc.c:2476: error: 'filter' undeclared (first use in this function)
+alarmFunc.c:2477: error: 'guint' undeclared (first use in this function)
+alarmFunc.c:2477: error: expected ';' before 'response'
+alarmFunc.c:2478: error: 'GtkWindow' undeclared (first use in this function)
+alarmFunc.c:2478: error: 'window' undeclared (first use in this function)
+alarmFunc.c:2482: error: expected expression before ')' token
+alarmFunc.c:2495: error: 'insomniacTO' undeclared (first use in this function)
+alarmFunc.c:2496: warning: implicit declaration of function 'g_source_remove'
+alarmFunc.c:2506: warning: implicit declaration of function 'gtk_file_filter_new'
+alarmFunc.c:2507: warning: implicit declaration of function 'gtk_file_filter_add_pattern'
+alarmFunc.c:2509: warning: implicit declaration of function 'gtk_file_filter_set_name'
+alarmFunc.c:2517: error: 'GTK_FILE_CHOOSER_ACTION_OPEN' undeclared (first use in this function)
+alarmFunc.c:2518: error: 'GTK_STOCK_CANCEL' undeclared (first use in this function)
+alarmFunc.c:2519: error: 'GTK_RESPONSE_CANCEL' undeclared (first use in this function)
+alarmFunc.c:2520: error: 'GTK_STOCK_OPEN' undeclared (first use in this function)
+alarmFunc.c:2521: error: 'GTK_RESPONSE_ACCEPT' undeclared (first use in this function)
+alarmFunc.c:2528: error: 'GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER' undeclared (first use in this function)
+alarmFunc.c:2550: warning: implicit declaration of function 'gtk_file_chooser_select_filename'
+alarmFunc.c:2551: warning: implicit declaration of function 'GTK_FILE_CHOOSER'
+alarmFunc.c:2566: warning: implicit declaration of function 'gtk_file_chooser_add_filter'
+alarmFunc.c:2568: error: 'response' undeclared (first use in this function)
+alarmFunc.c:2573: error: 'GTK_RESPONSE_OK' undeclared (first use in this function)
+alarmFunc.c:2577: warning: implicit declaration of function 'gtk_file_chooser_get_filename'
+alarmFunc.c:2577: warning: assignment makes pointer from integer without a cast
+alarmFunc.c:2624: warning: implicit declaration of function 'g_free'
+alarmFunc.c:2628: warning: implicit declaration of function 'gtk_widget_destroy'
+fc4.c: In function 'loadAppGraphics':
+fc4.c:465: error: 'TRUE' undeclared (first use in this function)
+fc4.c:466: warning: control reaches end of non-void function
+fc4.c: In function 'clearAppGraphics':
+fc4.c:489: error: 'TRUE' undeclared (first use in this function)
+fc4.c:490: warning: control reaches end of non-void function
